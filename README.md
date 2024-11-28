@@ -20,6 +20,7 @@ Serving the HTML pages.
 Testing the webserver.
 
 ## PROGRAM:
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -96,7 +97,7 @@ Testing the webserver.
     </div>
 </body>
 </html>
-
+```
 ## OUTPUT:
 ![image](https://github.com/user-attachments/assets/536bcb60-681e-4368-b4b2-c246a62d19a2)
 
