@@ -100,6 +100,8 @@ Testing the webserver.
 ```
 ## OUTPUT:
 ![image](https://github.com/user-attachments/assets/536bcb60-681e-4368-b4b2-c246a62d19a2)
+![Screenshot 2024-12-07 162430](https://github.com/user-attachments/assets/66113c20-c798-4e72-8dba-443971076316)
+
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
