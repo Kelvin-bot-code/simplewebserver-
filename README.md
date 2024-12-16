@@ -21,6 +21,8 @@ Testing the webserver.
 
 ## PROGRAM:
 ```html
+from http.server import HTTPServer,  BaseHTTPRequestHandler
+content = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -97,7 +99,20 @@ Testing the webserver.
     </div>
 </body>
 </html>
+
+class myhandler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        print("request received")
+        self.send_response (200)
+        self.send_header('content-type','text-html; charset=utf-8')
+        self.end_headers()
+        self.wfile.write(content.encode())
+server_address =('',8000)
+httpd = HTTPServer(server_address,myhandler)
+print("This is my webserver")
+httpd.serve_forever()        
 ```
+
 ## OUTPUT:
 ![image](https://github.com/user-attachments/assets/536bcb60-681e-4368-b4b2-c246a62d19a2)
 ![image](https://github.com/user-attachments/assets/e996ea78-61a5-436f-8d96-0784f7d84714)
